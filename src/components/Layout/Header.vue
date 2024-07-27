@@ -9,7 +9,7 @@
                         সহজ এবং দ্রুত সময়ে আমরাই দিচ্ছি আপনার স্বপ্নের আবাসিক সমাধান! আমাদের ওয়েবসাইটে আসুন, আপনার পছন্দের অঞ্চলে বাসা খুঁজুন! যেকোনো স্থানে, যেকোনো সময়ে, সহজেই বাসা খুঁজুন এবং ভাড়া দিন - সবই এখন আপনার হাতের মুঠোয় !
                     </p>
 
-                    <a href="#" class="text-lg text-black font-bold mt-5 rounded-full px-5 py-2 bg-purple-600 border-2 border-black outline outline-offset-2 outline-4 outline-purple-600 hover:bg-purple-500 hover:outline-purple-500 hover:ease-in-out duration-200">বাসা খুঁজুন</a>
+                    <RouterLink :to="{name: 'House'}" class="text-lg text-black font-bold mt-5 rounded-full px-5 py-2 bg-purple-600 border-2 border-black outline outline-offset-2 outline-4 outline-purple-600 hover:bg-purple-500 hover:outline-purple-500 hover:ease-in-out duration-200">বাসা খুঁজুন</RouterLink>
                 </div>
             </div>
             

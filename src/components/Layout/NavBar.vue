@@ -1,5 +1,5 @@
 <template>
-<div class="bg-transparent fixed top-0 w-full shadow">
+<div class="bg-transparent fixed top-0 w-full shadow z-10">
     <div class="container mx-auto px-4">
       <div class="flex items-center justify-between py-4">
         <div>
@@ -9,15 +9,15 @@
         </div>
 
         <div class="hidden sm:flex sm:items-center">
-          <a href="#" class="text-white text-md font-semibold hover:text-purple-600 mr-4">হোম</a>
-          <a href="#" class="text-white text-md font-semibold hover:text-purple-600 mr-4">আমাদের সম্পর্কে</a>
-          <a href="#" class="text-white text-md font-semibold hover:text-purple-600 mr-4">যোগাযোগ</a>
-          <a href="#" class="text-base text-black font-bold rounded-full px-4 py-2 bg-purple-600 border-2 border-black outline outline-offset-2 outline-4 outline-purple-600 hover:bg-purple-500 hover:outline-purple-500 hover:ease-in-out duration-200"> + পোস্ট করুন</a>
+          <RouterLink :to="{name: 'Home'}" class="text-white text-md font-semibold hover:text-purple-500 mr-4">হোম</RouterLink>
+          <RouterLink to="/" class="text-white text-md font-semibold hover:text-purple-500 mr-4">আমাদের সম্পর্কে</RouterLink>
+          <RouterLink to="/" class="text-white text-md font-semibold hover:text-purple-500 mr-4">যোগাযোগ</RouterLink>
+          <RouterLink :to="{name: 'House'}" class="text-base text-black font-bold rounded-full px-4 py-2 bg-purple-600 border-2 border-black outline outline-offset-2 outline-4 outline-purple-600 hover:bg-purple-500 hover:outline-purple-500 hover:ease-in-out duration-200"> + পোস্ট করুন</RouterLink>
         </div>
 
         <div class="hidden sm:flex sm:items-center">
-          <a href="#" class="text-white text-sm font-semibold hover:text-purple-600 mr-4">Sign in</a>
-          <a href="#" class="text-white text-sm font-semibold border px-4 py-2 rounded-lg hover:text-purple-600 hover:border-purple-600">Sign up</a>
+          <RouterLink to="/" class="text-white text-sm font-semibold hover:text-purple-500 mr-4">Sign in</RouterLink>
+          <RouterLink to="/" class="text-white text-sm font-semibold border px-4 py-2 rounded-lg hover:text-purple-500 hover:border-purple-600">Sign up</RouterLink>
         </div>
 
         <div class="sm:hidden cursor-pointer" @click.prevent="dropdown = !dropdown">
@@ -32,15 +32,15 @@
 
     <div class="sm:hidden bg-white border-t-2 py-2 px-2" :class="{ 'hidden': !dropdown }">
       <div class="flex flex-col">
-        <a href="#" class="text-gray-800 text-sm font-semibold hover:text-purple-600 mb-1">হোম</a>
-        <a href="#" class="text-gray-800 text-sm font-semibold hover:text-purple-600 mb-1">আমাদের সম্পর্কে</a>
-        <a href="#" class="text-gray-800 text-sm font-semibold hover:text-purple-600 mb-1">যোগাযোগ</a>
+        <RouterLink :to="{name: 'Home'}" class="text-gray-800 text-sm font-semibold hover:text-purple-500 mb-1">হোম</RouterLink>
+        <RouterLink to="" class="text-gray-800 text-sm font-semibold hover:text-purple-500 mb-1">আমাদের সম্পর্কে</RouterLink>
+        <RouterLink to="" class="text-gray-800 text-sm font-semibold hover:text-purple-500 mb-1">যোগাযোগ</RouterLink>
         <div class="flex justify-start items-start py-2">
-          <a href="#" class="text-base text-black font-bold rounded-full px-2 py-1 bg-purple-600 border-2 border-black outline outline-offset-2 outline-4 outline-purple-600 hover:bg-purple-500 hover:outline-purple-500 hover:ease-in-out duration-200"> + পোস্ট করুন</a>
+          <RouterLink to=""class="text-base text-black font-bold rounded-full px-2 py-1 bg-purple-600 border-2 border-black outline outline-offset-2 outline-4 outline-purple-600 hover:bg-purple-500 hover:outline-purple-500 hover:ease-in-out duration-200"> + পোস্ট করুন </RouterLink>
         </div>
         <div class="flex justify-between items-center border-t-2 pt-2">
-          <a href="#" class="text-gray-800 text-sm font-semibold hover:text-purple-600 mr-4">Sign in</a>
-          <a href="#" class="text-gray-800 text-sm font-semibold border px-4 py-1 rounded-lg hover:text-purple-600 hover:border-purple-600">Sign up</a>
+          <RouterLink to="/" class="text-gray-800 text-sm font-semibold hover:text-purple-500 mr-4">Sign in</RouterLink>
+          <RouterLink :to="{name: 'House'}" class="text-gray-800 text-sm font-semibold border px-4 py-1 rounded-lg hover:text-purple-500 hover:border-purple-600">Sign up</RouterLink>
         </div>
       </div>
     </div>
